@@ -10,7 +10,7 @@ const port = 5555
 const compass_string = process.env.COMPASS_STRING
  const atlas_string = process.env.ATLAS_STRING
 
- mongoose.connect(compass_string)
+ mongoose.connect(atlas_string)
  .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("Connection Error; ",err));
 
