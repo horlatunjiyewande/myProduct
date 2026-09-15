@@ -2,7 +2,7 @@ const express = require("express")
 
 const userRoute = express.Router()
 const { get } = require("mongoose")
-const { createUser, deleteUser,getAllUsers,getSingleUser,updateUser} = require("../controller/userController")
+const { loginUser, createUser, deleteUser,getAllUsers,getSingleUser,updateUser} = require("../controller/userController")
 
 userRoute.post("/new-user",createUser)
 userRoute.get("/all-users",getAllUsers)
