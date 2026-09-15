@@ -4,7 +4,7 @@ const express = require("express")
 const mongoose = require('mongoose')
 const productRoute = require("./route/productRoutes")
 const userRoute = require("./route/userRoutes")
-mongoose.connect("compass_string")
+mongoose.connect(compass_string)
 
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("Connection Error; ",err));
